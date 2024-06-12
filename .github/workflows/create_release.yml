@@ -39,7 +39,7 @@ jobs:
           printf "pack_directory='./${{ inputs.folder }}'\nrecompress_compressed_files=true\nallow_mods=['Minecraft Transit Railway 3']\n['assets/mtr/**']\nforce_include = true" | packsquash
       
       - name: Create tag
-        uses: actions/github-script@v5
+        uses: actions/github-script@v7
         with:
           script: |
             github.rest.git.createRef({
