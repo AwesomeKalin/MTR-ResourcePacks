@@ -1,0 +1,29 @@
+name: Upload to Archive.org
+on: push
+
+jobs:
+  job:
+    name: Upload
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          pip install internetarchive
+
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+            fetch-depth: 0
+            
+      - name: Create bundle
+        run: git bundle create mtr_resourcepacks-${{ github.sha }}.bundle --all
+
+      - name: Upload file to archive.org
+        run: |
+          ia configure -u ${{ secrets.IA_USER }} -p ${{ secrets.IA_PWD }}
+          ia upload mtr_resourcepacks-${{ github.sha }} mtr_resourcepacks-${{ github.sha }}.bundle --metadata="mediatype:software" --metadata="creator:AwesomeKalin55" --metadata="creator:Contributors" --metadata="title:mtr_resourcepacks-${{ github.sha }}" --metadata="scanner:MTR Resource Packs Auto-Archive" --metadata="collection:open_source_software" --metadata="subject:Minecraft;mtr;minecraft transit railway;trains;resource packs" --metadata="originalurl:https://github.com/AwesomeKalin/MTR-ResourcePacks" --retries 20
