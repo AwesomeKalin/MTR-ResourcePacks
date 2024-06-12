@@ -1,0 +1,63 @@
+name: Create Release
+on:
+  workflow_dispatch:
+    inputs:
+      folder:
+        description: 'RP Folder'
+        required: true
+        type: string
+      version:
+        description: 'Pack Version'
+        required: true
+        type: string
+      prerelease:
+        description: 'Is this version a pre-release?'
+        required: true
+        type: boolean
+
+jobs:
+  release-pack:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      discussions: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Add PackSquash Apt Repo
+        run: |
+          sudo mkdir -p /etc/apt/keyrings && \
+          sudo wget -O /etc/apt/keyrings/packsquash.key https://deb.packages.packsquash.aylas.org/public.key && \
+          echo 'deb [signed-by=/etc/apt/keyrings/packsquash.key] https://deb.packages.packsquash.aylas.org/debian stable main' | sudo tee /etc/apt/sources.list.d/packsquash.list
+
+      - name: Setup PackSquash
+        run: |
+          sudo apt-get update
+          sudo apt-get install packsquash
+      
+      - name: Create resource pack
+        run: |
+          echo "rpname=$(cat ./${{ inputs.folder }}/name.txt)" >> $GITHUB_ENV
+          echo "rpnamenospace=$(cat ./${{ inputs.folder }}/name.txt | sed 's/ //g')" >> $GITHUB_ENV
+          printf "pack_directory='./${{ inputs.folder }}'\nrecompress_compressed_files=true\nallow_mods=['Minecraft Transit Railway 3']\n['assets/mtr/**']\nforce_include = true" | packsquash
+      
+      - name: Create tag
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/${{ env.rpnamenospace }}-v${{ inputs.version }}',
+              sha: context.sha
+            })
+
+      - name: Upload resource pack
+        uses: softprops/action-gh-release@v2
+        with:
+          files: pack.zip
+          body_path: ./${{ inputs.folder }}/changelog.txt
+          name: ${{ env.rpname }} v${{ inputs.version }}
+          prerelease: ${{ inputs.prerelease }}
+          tag_name: ${{ env.rpnamenospace }}-v${{ inputs.version }}
