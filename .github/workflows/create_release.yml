@@ -39,6 +39,7 @@ jobs:
       - name: Create resource pack
         run: |
           echo "rpname=$(cat ./${{ inputs.folder }}/name.txt)" >> $GITHUB_ENV
+          echo "rpnamenospace=$(cat ./${{ inputs.folder }}/name.txt) | xargs" >> $GITHUB_ENV
           printf "pack_directory='./${{ inputs.folder }}'\nrecompress_compressed_files=true\nallow_mods=['Minecraft Transit Railway 3']\n['assets/mtr/**']\nforce_include = true" | packsquash
       
       - name: Create tag
@@ -48,7 +49,7 @@ jobs:
             github.rest.git.createRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              ref: 'refs/tags/${{ env.rpname }}-v${{ inputs.version }}',
+              ref: 'refs/tags/${{ env.rpnamenospace }}-v${{ inputs.version }}',
               sha: context.sha
             })
 
