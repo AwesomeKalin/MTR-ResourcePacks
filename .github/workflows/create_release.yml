@@ -60,4 +60,4 @@ jobs:
           body-path: ./${{ inputs.folder }}/changelog.txt
           name: ${{ env.rpname }} v${{ inputs.version }}
           prerelease: ${{ inputs.prerelease }}
-          tag_name: ${{ env.rpname }}-v${{ inputs.version }}
+          tag_name: ${{ env.rpnamenospace }}-v${{ inputs.version }}
