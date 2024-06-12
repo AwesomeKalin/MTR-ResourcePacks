@@ -39,7 +39,7 @@ jobs:
       - name: Create resource pack
         run: |
           echo "rpname=$(cat ./${{ inputs.folder }}/name.txt)" >> $GITHUB_ENV
-          echo "rpnamenospace=$(cat ./${{ inputs.folder }}/name.txt | tr -d ' ')" >> $GITHUB_ENV
+          echo "rpnamenospace=$(cat ./${{ inputs.folder }}/name.txt | sed 's/ //g')" >> $GITHUB_ENV
           printf "pack_directory='./${{ inputs.folder }}'\nrecompress_compressed_files=true\nallow_mods=['Minecraft Transit Railway 3']\n['assets/mtr/**']\nforce_include = true" | packsquash
       
       - name: Create tag
