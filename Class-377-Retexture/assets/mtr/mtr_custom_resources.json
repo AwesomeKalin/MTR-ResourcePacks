@@ -1,0 +1,19 @@
+{
+    "custom_trains": {
+        "steve_black": {
+            "name": "I... Am Steve British Rail Class 377",
+            "description": "A Class 377 Retexture that puts Steve (Black)'s face everywhere",
+            "color": "036e82",
+            "texture_id": "mtr:textures/steve_black",
+            "tags": [
+                "family:class_377",
+				"doors:2",
+                "retexture",
+                "steve",
+                "a_minecraft_movie",
+                "jack_black"
+            ],
+            "base_train_type": "class_377"
+        }
+    }
+}

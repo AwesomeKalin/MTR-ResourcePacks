@@ -7,6 +7,9 @@ A collection of Minecraft Resource Packs for the Minecraft Transit Railway. Plea
 Meme Packs:
  - [Amogus Train](./Amogus)
 
+Train Retextures:
+ - [Class 377 Retexture](./Class-377-Retexture/)
+
 # Contributing
 
 These instructions are specifically for contributing new packs to the collection. Some packs may have specific contribution instructions and others may not allow contribution.
