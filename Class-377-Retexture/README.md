@@ -1,6 +1,6 @@
 # Class 377 Retexture's
 
-A bynch of retexture's of the Class 377
+A bunch of retexture's of the Class 377
 
 # License
 
