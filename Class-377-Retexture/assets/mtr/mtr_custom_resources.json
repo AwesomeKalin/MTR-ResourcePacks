@@ -5,6 +5,7 @@
             "color": "036E82",
             "base_train_type": "class_377_southern",
             "texture_id": "mtr:texture/steve_black.png",
+            "bve_sound_base_id": "steve_black_",
             "tags": [
                 "family:class_377",
 				"doors:2",
