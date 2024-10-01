@@ -14,4 +14,10 @@ Simply open a PR with your class 377 retexture. Please note that only the origin
 
 # My Links
 
-TODO: Place some links here. Max 5 links. You may remove this section if you wish
+[Modrinth](https://modrinth.com/resourcepack/class-377-retextures)
+
+[Curseforge](https://legacy.curseforge.com/minecraft/texture-packs/class-377-retextures)
+
+[Ko-fi](https://ko-fi.com/awesomekalin55)
+
+[More Donation Options](https://github.com/AwesomeKalin/DONATION)
