@@ -7,6 +7,7 @@ A bunch of retexture's of the Class 377
 Each retexture has a different license. See the list below for the license:
 
 I... Am Steve Retexture - [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+Pink Sheep Retexture - [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 
 # Contribution
 
