@@ -15,7 +15,8 @@
             ]
         },
         "pink_sheep": {
-            "name": "Pink Sheep British Class 377",
+            "name": "Pink Sheep British Rail Class 377",
+            "color": "B4596F",
             "base_train_type": "class_377_southern",
             "texture_id": "mtr:texture/pink_sheep.png",
             "tags": [
@@ -25,6 +26,17 @@
                 "pink_sheep",
                 "a_minecraft_movie",
                 "sheep"
+            ]
+        },
+        "class_377_southeastern": {
+            "name": "British Rail Class 377 (Southeastern)",
+            "base_train_type": "class_377_southern",
+            "texture_id": "mtr:texture/southeastern.png",
+            "tags": [
+                "family:class_377",
+                "doors:2",
+                "southeastern",
+                "retexture"
             ]
         }
     }
