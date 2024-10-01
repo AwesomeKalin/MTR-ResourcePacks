@@ -1,1 +1,2 @@
-Initial Release
+Not doing custom sounds as they may be bugged on MTR 3
+Added Pink Sheep 377

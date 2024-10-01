@@ -5,7 +5,6 @@
             "color": "036E82",
             "base_train_type": "class_377_southern",
             "texture_id": "mtr:texture/steve_black.png",
-            "bve_sound_base_id": "steve_black_",
             "tags": [
                 "family:class_377",
 				"doors:2",
@@ -13,6 +12,19 @@
                 "steve",
                 "a_minecraft_movie",
                 "jack_black"
+            ]
+        },
+        "pink_sheep": {
+            "name": "Pink Sheep British Class 377",
+            "base_train_type": "class_377_southern",
+            "texture_id": "mtr:texture/pink_sheep.png",
+            "tags": [
+                "family:class_377",
+                "doors:2",
+                "retexture",
+                "pink_sheep",
+                "a_minecraft_movie",
+                "sheep"
             ]
         }
     }
