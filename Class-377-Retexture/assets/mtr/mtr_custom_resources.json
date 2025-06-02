@@ -1,43 +1,797 @@
 {
-    "custom_trains": {
-        "steve_black": {
-            "name": "I... Am Steve British Rail Class 377",
+    "vehicles": [
+        {
+            "id": "steve_black_377_trailer",
+            "name": "I... Am Steve British Rail Class 377 (Trailer)",
             "color": "036E82",
-            "base_train_type": "class_377_southern",
-            "texture_id": "mtr:texture/steve_black.png",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 0,
+            "couplingPadding2": 0,
+            "wikipediaArticle": "British_Rail_Class_377",
             "tags": [
                 "family:class_377",
-				"doors:2",
+                "iso_3166:GB",
+                "doors:2",
+                "type:trailer",
                 "retexture",
                 "steve",
                 "a_minecraft_movie",
                 "jack_black"
-            ]
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": true,
+            "hasGangway2": true,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
         },
-        "pink_sheep": {
-            "name": "Pink Sheep British Rail Class 377",
-            "color": "B4596F",
-            "base_train_type": "class_377_southern",
-            "texture_id": "mtr:texture/pink_sheep.png",
+        {
+            "id": "steve_black_377_cab_1",
+            "name": "I... Am Steve British Rail Class 377 (Cab Forwards)",
+            "color": "036E82",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 1,
+            "couplingPadding2": 0,
+            "wikipediaArticle": "British_Rail_Class_377",
             "tags": [
                 "family:class_377",
+                "iso_3166:GB",
                 "doors:2",
+                "type:cab_1",
+                "retexture",
+                "steve",
+                "a_minecraft_movie",
+                "jack_black"
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": false,
+            "hasGangway2": true,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
+        },
+        {
+            "id": "steve_black_377_cab_2",
+            "name": "I... Am Steve British Rail Class 377 (Cab Backwards)",
+            "color": "036E82",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 0,
+            "couplingPadding2": 1,
+            "wikipediaArticle": "British_Rail_Class_377",
+            "tags": [
+                "family:class_377",
+                "iso_3166:GB",
+                "doors:2",
+                "type:cab_2",
+                "retexture",
+                "steve",
+                "a_minecraft_movie",
+                "jack_black"
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": true,
+            "hasGangway2": false,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
+        },
+        {
+            "id": "steve_black_377_cab_3",
+            "name": "I... Am Steve British Rail Class 377 (Cab Double)",
+            "color": "036E82",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 1,
+            "couplingPadding2": 1,
+            "wikipediaArticle": "British_Rail_Class_377",
+            "tags": [
+                "family:class_377",
+                "iso_3166:GB",
+                "doors:2",
+                "type:cab_3",
+                "retexture",
+                "steve",
+                "a_minecraft_movie",
+                "jack_black"
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/steve_black.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": false,
+            "hasGangway2": false,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
+        },
+        {
+            "id": "pink_sheep_377_trailer",
+            "name": "Pink Sheep British Rail Class 377 (Trailer)",
+            "color": "B4596F",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 0,
+            "couplingPadding2": 0,
+            "wikipediaArticle": "British_Rail_Class_377",
+            "tags": [
+                "family:class_377",
+                "iso_3166:GB",
+                "doors:2",
+                "type:trailer",
                 "retexture",
                 "pink_sheep",
                 "a_minecraft_movie",
                 "sheep"
-            ]
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": true,
+            "hasGangway2": true,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
         },
-        "class_377_southeastern": {
-            "name": "British Rail Class 377 (Southeastern)",
-            "base_train_type": "class_377_southern",
-            "texture_id": "mtr:texture/southeastern.png",
+        {
+            "id": "pink_sheep_377_cab_1",
+            "name": "Pink Sheep British Rail Class 377 (Cab Forwards)",
+            "color": "B4596F",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 1,
+            "couplingPadding2": 0,
+            "wikipediaArticle": "British_Rail_Class_377",
             "tags": [
                 "family:class_377",
+                "iso_3166:GB",
                 "doors:2",
+                "type:cab_1",
+                "retexture",
+                "pink_sheep",
+                "a_minecraft_movie",
+                "sheep"
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": false,
+            "hasGangway2": true,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
+        },
+        {
+            "id": "pink_sheep_377_cab_2",
+            "name": "Pink Sheep British Rail Class 377 (Cab Backwards)",
+            "color": "B4596F",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 0,
+            "couplingPadding2": 1,
+            "wikipediaArticle": "British_Rail_Class_377",
+            "tags": [
+                "family:class_377",
+                "iso_3166:GB",
+                "doors:2",
+                "type:cab_2",
+                "retexture",
+                "pink_sheep",
+                "a_minecraft_movie",
+                "sheep"
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": true,
+            "hasGangway2": false,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
+        },
+        {
+            "id": "pink_sheep_377_cab_3",
+            "name": "Pink Sheep British Rail Class 377 (Cab Double)",
+            "color": "036E82",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 1,
+            "couplingPadding2": 1,
+            "wikipediaArticle": "British_Rail_Class_377",
+            "tags": [
+                "family:class_377",
+                "iso_3166:GB",
+                "doors:2",
+                "type:cab_3",
+                "retexture",
+                "pink_sheep",
+                "a_minecraft_movie",
+                "sheep"
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/pink_sheep.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": false,
+            "hasGangway2": false,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
+        },
+        {
+            "id": "class_377_southeastern_trailer",
+            "name": "British Rail Class 377 (Southeastern, Trailer)",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 0,
+            "couplingPadding2": 0,
+            "wikipediaArticle": "British_Rail_Class_377",
+            "tags": [
+                "family:class_377",
+                "iso_3166:GB",
+                "doors:2",
+                "type:trailer",
                 "southeastern",
                 "retexture"
-            ]
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/southeastern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/southeastern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/southeastern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": true,
+            "hasGangway2": true,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
+        },
+        {
+            "id": "class_377_southeastern_cab_1",
+            "name": "British Rail Class 377 (Southeastern, Cab Forwards)",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 1,
+            "couplingPadding2": 0,
+            "wikipediaArticle": "British_Rail_Class_377",
+            "tags": [
+                "family:class_377",
+                "iso_3166:GB",
+                "doors:2",
+                "type:cab_1",
+                "southeastern",
+                "retexture"
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/southeastern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/southeastern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/southeastern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": false,
+            "hasGangway2": true,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
+        },
+        {
+            "id": "class_377_southeastern_cab_2",
+            "name": "British Rail Class 377 (Southeastern, Cab Backwards)",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 0,
+            "couplingPadding2": 1,
+            "wikipediaArticle": "British_Rail_Class_377",
+            "tags": [
+                "family:class_377",
+                "iso_3166:GB",
+                "doors:2",
+                "type:cab_2",
+                "southeastern",
+                "retexture"
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/class_377_southern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/class_377_southern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_end_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/class_377_southern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": true,
+            "hasGangway2": false,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
+        },
+        {
+            "id": "class_377_southeastern_cab_3",
+            "name": "British Rail Class 377 (Southeastern, Cab Double)",
+            "color": "036E82",
+            "transportMode": "TRAIN",
+            "width": 2,
+            "couplingPadding1": 1,
+            "couplingPadding2": 1,
+            "wikipediaArticle": "British_Rail_Class_377",
+            "tags": [
+                "family:class_377",
+                "iso_3166:GB",
+                "doors:2",
+                "type:cab_3",
+                "retexture",
+                "southeastern"
+            ],
+            "models": [
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/southeastern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_common.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/southeastern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                },
+                {
+                    "modelResource": "mtr:models/vehicle/class_377.bbmodel",
+                    "textureResource": "class377:textures/southeastern.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/class_377_head_2.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/class_377.json"
+                }
+            ],
+            "bogie1Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "bogie2Models": [
+                {
+                    "modelResource": "mtr:models/vehicle/bogie_1.bbmodel",
+                    "textureResource": "mtr:textures/vehicle/bogie_1.png",
+                    "modelPropertiesResource": "mtr:properties/vehicle/bogie_1.json",
+                    "positionDefinitionsResource": "mtr:properties/definition/origin.json"
+                }
+            ],
+            "hasGangway1": false,
+            "hasGangway2": false,
+            "hasBarrier1": false,
+            "hasBarrier2": false,
+            "legacySpeedSoundBaseResource": "class_377",
+            "legacySpeedSoundCount": 51,
+            "legacyDoorSoundBaseResource": "class_377",
+            "legacyDoorCloseSoundTime": 1,
+            "length": 17.0,
+            "bogie1Position": -4.5,
+            "bogie2Position": 4.5
         }
-    }
+    ]
 }
