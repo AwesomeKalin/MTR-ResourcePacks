@@ -10,6 +10,8 @@ I... Am Steve Retexture - [CC BY-SA 4.0](https://creativecommons.org/licenses/by
 
 Pink Sheep Retexture - [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 
+Southeastern Retexture - [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+
 # Contribution
 
 Simply open a PR with your class 377 retexture. Please note that only the original creator or anyone they approve can change a retexture.
