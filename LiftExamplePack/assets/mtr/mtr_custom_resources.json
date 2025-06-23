@@ -1,0 +1,10 @@
+{
+    "lifts": [
+        {
+            "id": "mtr_lift_example",
+            "name": "Example Lift",
+            "color": "CCCCCC",
+            "textureResource": "mtr:example_lift/example_lift.png"
+        }
+    ]
+}
