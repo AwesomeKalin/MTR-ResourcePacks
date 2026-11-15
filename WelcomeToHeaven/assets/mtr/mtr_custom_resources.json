@@ -1,0 +1,27 @@
+{
+    "objects": [
+        {
+            "id": "welcometoheaven",
+            "name": "eyecandy.heaven.welcometoheaven",
+            "modelResource": "heaven:welcometoheaven/welcometoheaven.obj",
+            "textureResource": "heaven:welcometoheaven/welcometoheaven.mtl",
+            "flipTextureV": true,
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "color": "D4AF06"
+        }
+    ]
+}
