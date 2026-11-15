@@ -27,9 +27,12 @@ jobs:
 
       - name: Add PackSquash Apt Repo
         run: |
-          sudo mkdir -p /etc/apt/keyrings && \
-          sudo wget -O /etc/apt/keyrings/packsquash.key https://deb.packages.packsquash.aylas.org/public.key && \
-          echo 'deb [signed-by=/etc/apt/keyrings/packsquash.key] https://deb.packages.packsquash.aylas.org/debian stable main' | sudo tee /etc/apt/sources.list.d/packsquash.list
+          set -o pipefail
+          sudo mkdir -p /etc/apt/keyrings
+          wget -qO- https://deb.packages.packsquash.aylas.org/public.key | \
+            gpg --dearmor | \
+            sudo tee /etc/apt/keyrings/packsquash.gpg >/dev/null
+          echo 'deb [signed-by=/etc/apt/keyrings/packsquash.gpg] https://deb.packages.packsquash.aylas.org/debian stable main' | sudo tee /etc/apt/sources.list.d/packsquash.list
 
       - name: Setup PackSquash
         run: |
