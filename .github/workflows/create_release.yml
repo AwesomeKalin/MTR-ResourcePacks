@@ -25,22 +25,20 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Add PackSquash Apt Repo
-        run: |
-          sudo mkdir -p /etc/apt/keyrings && \
-          sudo wget -O /etc/apt/keyrings/packsquash.key https://deb.packages.packsquash.aylas.org/public.key && \
-          echo 'deb [signed-by=/etc/apt/keyrings/packsquash.key] https://deb.packages.packsquash.aylas.org/debian stable main' | sudo tee /etc/apt/sources.list.d/packsquash.list
-
       - name: Setup PackSquash
         run: |
           sudo apt-get update
-          sudo apt-get install packsquash
-      
+          sudo apt-get upgrade -y
+          sudo apt-get install -y unzip
+          wget https://github.com/ComunidadAylas/PackSquash/releases/latest/download/packsquash-x86_64-unknown-linux-gnu.zip
+          unzip packsquash-x86_64-unknown-linux-gnu.zip
+          chmod +x packsquash
+
       - name: Create resource pack
         run: |
           echo "rpname=$(cat ./${{ inputs.folder }}/name.txt)" >> $GITHUB_ENV
           echo "rpnamenospace=$(cat ./${{ inputs.folder }}/name.txt | sed 's/ //g')" >> $GITHUB_ENV
-          printf "pack_directory='./${{ inputs.folder }}'\nrecompress_compressed_files=true\nallow_mods=['Minecraft Transit Railway 3']\n['assets/mtr/**']\nforce_include = true" | packsquash
+          printf "pack_directory='./${{ inputs.folder }}'\nrecompress_compressed_files=true\nallow_mods=['Minecraft Transit Railway 3']\n['assets/mtr/**']\nforce_include = true" | ./packsquash
       
       - name: Create tag
         uses: actions/github-script@v7
