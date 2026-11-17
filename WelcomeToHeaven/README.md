@@ -1,15 +1,13 @@
-# Pack Name
+# Welcome To Heaven Eyecandy
 
-Insert your pack's description. List any new trains, signs etc. that your pack added
+Adds an MTR eyecandy/decoration object that is an arch that says "Welcome to Heaven!". Was made for the station "Heaven" in PurpleMTR.
+
+Feel free to use as you wish.
 
 # License
 
-State how people may use your resource pack
+CC0
 
 # Contribution
 
-List how people can contribute to your resource pack
-
-# My Links
-
-Place some links here. Max 5 links. You may remove this section if you wish
+Contributions are not accepted to this resource pack
